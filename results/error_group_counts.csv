@@ -1,0 +1,9 @@
+experiment,error_group,reviews
+LogisticRegression_B_undersampled,TP,222
+LogisticRegression_B_undersampled,FP,242
+LogisticRegression_B_undersampled,FN,125
+LogisticRegression_B_undersampled,TN,516
+XGBoost_B_full,TP,138
+XGBoost_B_full,FP,64
+XGBoost_B_full,FN,209
+XGBoost_B_full,TN,694

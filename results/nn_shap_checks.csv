@@ -1,0 +1,5 @@
+subset,experiment,background_rows,explained_test_rows,feature_count,nsamples,l1_reg,base_value,max_additivity_residual,seconds
+A,NeuralNetwork_A_undersampled,32,64,4,256,0 (no feature selection),0.5203727753832936,1.1920928955078125e-07,14.191093361999947
+B,NeuralNetwork_B_undersampled,32,100,12,256,0 (no feature selection),0.4794864924624562,1.1920928955078125e-07,23.396537956999964
+C,NeuralNetwork_C_undersampled,16,24,2012,256,num_features(20),0.5436690337955952,5.960464477539063e-08,10.838707920999923
+D,NeuralNetwork_D_undersampled,16,24,2012,256,num_features(20),0.5096183754503727,5.960464477539063e-08,9.30899192700008

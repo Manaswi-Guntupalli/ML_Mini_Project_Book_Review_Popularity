@@ -1,0 +1,17 @@
+{
+  "duplicate_reviews_removed": 0,
+  "invalid_engagement_rows_removed": 12,
+  "metadata_coverage": 1.0,
+  "reference_date": "2017-11-01 02:37:34+00:00",
+  "language_model": "lid.176.bin",
+  "thresholds": {
+    "metadata_reviews": 10,
+    "book_engagement": 60,
+    "popularity_share_strictly_greater_than": 0.02,
+    "english_confidence": 0.9
+  },
+  "input_sha256": {
+    "goodreads_reviews_poetry.json.gz": "4bf8f720bccf3c96caddda9eeb4b6bc7b4f7ecd72ec7f9345d8c9c28eeddd781",
+    "goodreads_books_poetry.json.gz": "84a8c21273d28b7df29dc7f996b15f2b39e92e3c8808cd7288578c704f07c4a9"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "accuracy": 0.685972850678733,
+  "precision": 0.0,
+  "recall": 0.0,
+  "specificity": 1.0,
+  "f1": 0.0,
+  "roc_auc": 0.5,
+  "average_precision": 0.31402714932126696,
+  "log_loss": 0.6309356274443909,
+  "tn": 758,
+  "fp": 0,
+  "fn": 347,
+  "tp": 0
+}

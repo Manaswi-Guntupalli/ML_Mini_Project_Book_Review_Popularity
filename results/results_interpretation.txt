@@ -1,0 +1,47 @@
+Scope: 9,663 English Poetry reviews, 462 books; 26.9% popular under the >0.02 engagement-share rule.
+
+Validation selected XGBoost_B_full. Test ROC-AUC=0.768, accuracy=0.753, recall=0.398, specificity=0.916.
+
+Majority baseline: accuracy=0.686, ROC-AUC=0.500, recall=0.000. Interpret these jointly, not accuracy alone.
+
+LogisticRegression B, full -> balanced training: accuracy 0.727 -> 0.668; recall 0.231 -> 0.640; ROC-AUC 0.736 -> 0.724.
+
+XGBoost B, full -> balanced training: accuracy 0.753 -> 0.678; recall 0.398 -> 0.735; ROC-AUC 0.768 -> 0.766.
+
+NeuralNetwork B, full -> balanced training: accuracy 0.754 -> 0.696; recall 0.360 -> 0.723; ROC-AUC 0.764 -> 0.746.
+
+LR C top absolute coefficients: user_reviews, num_words, "kaur", "pg", "lovelace".
+
+XGBoost C top split-count features: user_reviews, num_words, days_since_review, rating_diff, "kaur".
+
+NN C top sampled SHAP features: quote, "people", days_since_review, sentiment, "light". These high-dimensional SHAP ranks are exploratory.
+
+LR D top absolute coefficients: user_reviews, "kaur", "part", num_words, "poet".
+
+XGBoost D top split-count features: user_reviews, num_words, days_since_review, "kaur", "part".
+
+NN D top sampled SHAP features: quote, days_since_review, avg_sent_len, user_reviews, pct_verbs. These high-dimensional SHAP ranks are exploratory.
+
+LR B user_reviews: coefficient +0.745 (conditional association in standardized units; not causation).
+
+LR B user_rating: coefficient +0.124 (conditional association in standardized units; not causation).
+
+LR B rating_diff: coefficient -0.126 (conditional association in standardized units; not causation).
+
+LR B num_words: coefficient +0.451 (conditional association in standardized units; not causation).
+
+LR B sentiment: coefficient -0.103 (conditional association in standardized units; not causation).
+
+LogisticRegression_B_undersampled: score/share Pearson r=0.366, Spearman rho=0.413.
+
+XGBoost_D_undersampled: score/share Pearson r=0.406, Spearman rho=0.507.
+
+LogisticRegression_B_undersampled errors: TP=222, FP=242, FN=125, TN=516.
+
+XGBoost_B_full errors: TP=138, FP=64, FN=209, TN=694.
+
+Inspect the saved error ECDF plots before claiming that a feature separates TP, FP or FN. Overlapping curves do not establish identical groups or causality.
+
+Poetry user activity is a subset count; the paper used a much larger multi-genre snapshot. Different importance rankings are expected and should be discussed.
+
+This is broad paper-inspired analytical coverage on a reduced dataset, not exact experimental parity.

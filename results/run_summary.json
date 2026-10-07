@@ -1,0 +1,171 @@
+{
+  "dataset_scope": "Goodreads Poetry subset",
+  "raw_reviews": 154555,
+  "final_reviews": 9663,
+  "books": 462,
+  "users": 6336,
+  "popular_reviews": 2604,
+  "popular_fraction": 0.2694815274759392,
+  "best_experiment_selected_by_validation": "XGBoost_B_full",
+  "selected_test_metrics": {
+    "accuracy": 0.7529411764705882,
+    "precision": 0.6831683168316832,
+    "recall": 0.3976945244956772,
+    "specificity": 0.9155672823218998,
+    "f1": 0.5027322404371585,
+    "roc_auc": 0.7682358398029092,
+    "average_precision": 0.6272141443093456,
+    "log_loss": 0.5162367099359405,
+    "tn": 694,
+    "fp": 64,
+    "fn": 209,
+    "tp": 138
+  },
+  "majority_baseline": {
+    "accuracy": 0.685972850678733,
+    "precision": 0.0,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "f1": 0.0,
+    "roc_auc": 0.5,
+    "average_precision": 0.31402714932126696,
+    "log_loss": 0.6309356274443909,
+    "tn": 758,
+    "fp": 0,
+    "fn": 347,
+    "tp": 0
+  },
+  "text_only_demo": {
+    "accuracy": 0.6271493212669683,
+    "precision": 0.4412296564195298,
+    "recall": 0.7031700288184438,
+    "specificity": 0.5923482849604221,
+    "f1": 0.5422222222222223,
+    "roc_auc": 0.6954749720559944,
+    "average_precision": 0.52959481078576,
+    "log_loss": 0.6642112523297117,
+    "tn": 449,
+    "fp": 309,
+    "fn": 103,
+    "tp": 244,
+    "validation_roc_auc": 0.6411665676371558,
+    "selected_C": 0.1
+  },
+  "seed": 229,
+  "max_words": 2000,
+  "versions": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.4.1",
+    "nltk": "3.9.1",
+    "fasttext": "0.9.3",
+    "joblib": "1.6.0",
+    "matplotlib": "3.10.0",
+    "shap": "0.49.1",
+    "numba": "0.61.2",
+    "threadpoolctl": "3.7.0"
+  },
+  "paper_reference_commit": "5297102c0dd9cb93145fd0b1fdf3bf63532bab6a",
+  "input_sha256": {
+    "goodreads_reviews_poetry.json.gz": "4bf8f720bccf3c96caddda9eeb4b6bc7b4f7ecd72ec7f9345d8c9c28eeddd781",
+    "goodreads_books_poetry.json.gz": "84a8c21273d28b7df29dc7f996b15f2b39e92e3c8808cd7288578c704f07c4a9"
+  },
+  "shap_config": {
+    "A": {
+      "background": 32,
+      "explain": 64,
+      "nsamples": 256
+    },
+    "B": {
+      "background": 32,
+      "explain": 100,
+      "nsamples": 256
+    },
+    "C": {
+      "background": 16,
+      "explain": 24,
+      "nsamples": 256
+    },
+    "D": {
+      "background": 16,
+      "explain": 24,
+      "nsamples": 256
+    }
+  },
+  "shap_checks": [
+    {
+      "subset": "A",
+      "experiment": "NeuralNetwork_A_undersampled",
+      "background_rows": 32,
+      "explained_test_rows": 64,
+      "feature_count": 4,
+      "nsamples": 256,
+      "l1_reg": "0 (no feature selection)",
+      "base_value": 0.5203727753832936,
+      "max_additivity_residual": 1.1920928955078125e-07,
+      "seconds": 14.191093361999947
+    },
+    {
+      "subset": "B",
+      "experiment": "NeuralNetwork_B_undersampled",
+      "background_rows": 32,
+      "explained_test_rows": 100,
+      "feature_count": 12,
+      "nsamples": 256,
+      "l1_reg": "0 (no feature selection)",
+      "base_value": 0.4794864924624562,
+      "max_additivity_residual": 1.1920928955078125e-07,
+      "seconds": 23.396537956999964
+    },
+    {
+      "subset": "C",
+      "experiment": "NeuralNetwork_C_undersampled",
+      "background_rows": 16,
+      "explained_test_rows": 24,
+      "feature_count": 2012,
+      "nsamples": 256,
+      "l1_reg": "num_features(20)",
+      "base_value": 0.5436690337955952,
+      "max_additivity_residual": 5.960464477539063e-08,
+      "seconds": 10.838707920999923
+    },
+    {
+      "subset": "D",
+      "experiment": "NeuralNetwork_D_undersampled",
+      "background_rows": 16,
+      "explained_test_rows": 24,
+      "feature_count": 2012,
+      "nsamples": 256,
+      "l1_reg": "num_features(20)",
+      "base_value": 0.5096183754503727,
+      "max_additivity_residual": 5.960464477539063e-08,
+      "seconds": 9.30899192700008
+    }
+  ],
+  "explanations": [
+    "LR coefficients all six experiments and C/D word rankings",
+    "XGBoost split counts all six experiments and C/D word rankings",
+    "Sampled Kernel SHAP for balanced NN A/B/C/D",
+    "Score/share correlations all 18 experiments",
+    "All 12 B feature distributions by TP/FP/FN/TN for LR B and selected model"
+  ],
+  "limitations": [
+    "Single genre; results do not establish general performance.",
+    "Snapshot review counts and age are retrospective metadata.",
+    "Scores after undersampling are not calibrated probabilities.",
+    "Vocabulary, architecture, splitting and tuning differ from the full paper.",
+    "Snapshot engagement is affected by exposure and reviewer following; no causal claims."
+  ],
+  "runtime": {
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "threads": {
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2",
+      "MKL_NUM_THREADS": "2"
+    }
+  },
+  "fasttext_model_sha256": "7e69ec5451bc261cc7844e49e4792a85d7f09c06789ec800fc4a44aec362764e"
+}

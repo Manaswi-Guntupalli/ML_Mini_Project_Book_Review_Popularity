@@ -1,0 +1,9 @@
+stage,reviews,books,users
+Raw reviews,154555,36412,47400
+Unique review IDs,154555,36412,47400
+Nonnegative engagement counts,154543,36412,47398
+Positive engagement,59193,20064,20697
+Metadata review count >= 10,42081,6848,17114
+Book engagement >= 60,20230,737,10339
+English confidence >= 0.90,9663,462,6336
+Valid model inputs,9663,462,6336
