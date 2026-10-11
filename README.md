@@ -19,6 +19,8 @@ This is a Poetry-only, independently runnable adaptation inspired by Bridget Dal
 | [`Book_Review_Popularity_548_513.pdf`](Book_Review_Popularity_548_513.pdf) | Presentation exported as a PDF |
 | [`results/`](results/) | Saved evaluation tables, figures, run metadata and selected model artifacts from one execution |
 | [`results/requirements.txt`](results/requirements.txt) | Tested core package versions; the notebook installs its own dependencies |
+| [`Book_Review_Popularity_Writeup_548_513.pdf`](Book_Review_Popularity_Writeup_548_513.pdf) | Required two-page project write-up for submission |
+| [`Book_Review_Popularity_Writeup_548_513.docx`](Book_Review_Popularity_Writeup_548_513.docx) | Editable copy of the project write-up |
 
 The two compressed Goodreads inputs are **not stored in this repository**. In particular, downloading this repository alone does not provide the dataset or fastText language model needed for a fresh run.
 
@@ -62,7 +64,7 @@ The following values are from the saved execution in [`results/run_summary.json`
 | Test recall / specificity | 0.398 / 0.916 |
 | Majority-class baseline accuracy / ROC-AUC | 0.686 / 0.500 |
 
-Balancing the XGBoost B training data increased test recall to 0.735, with accuracy 0.678 and ROC-AUC 0.766. A different experiment, balanced XGBoost D, had a test ROC-AUC of 0.774, but **was not selected using the test set**; the selected model had the stronger validation result.
+Balancing the XGBoost B training data increased test recall to 0.735, with accuracy 0.678 and ROC-AUC 0.766. A different experiment, balanced XGBoost D, had a test ROC-AUC of 0.772, but **was not selected using the test set**; the selected model had the stronger validation result.
 
 The notebook also includes `predict_review("Your review text here")` for a live example. That function uses a **separate text-only TF-IDF + logistic regression model** (test ROC-AUC 0.695). A fresh text string does not contain the historical metadata needed by the selected XGBoost B model.
 
