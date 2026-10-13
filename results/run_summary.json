@@ -69,8 +69,8 @@
   },
   "paper_reference_commit": "5297102c0dd9cb93145fd0b1fdf3bf63532bab6a",
   "input_sha256": {
-    "goodreads_reviews_poetry.json.gz": "4bf8f720bccf3c96caddda9eeb4b6bc7b4f7ecd72ec7f9345d8c9c28eeddd781",
-    "goodreads_books_poetry.json.gz": "84a8c21273d28b7df29dc7f996b15f2b39e92e3c8808cd7288578c704f07c4a9"
+    "goodreads_reviews_poetry.json.gz": "f0f1c8d403cb67328c801bde6ae5c54cccd937b80979fefb042def044df82b78",
+    "goodreads_books_poetry.json.gz": "11a71d924f245323af8e0c16d9cc7b6beefb18cf155cb58434f8dc120febaaab"
   },
   "shap_config": {
     "A": {
@@ -105,7 +105,7 @@
       "l1_reg": "0 (no feature selection)",
       "base_value": 0.5203727753832936,
       "max_additivity_residual": 1.1920928955078125e-07,
-      "seconds": 14.191093361999947
+      "seconds": 20.680436973999804
     },
     {
       "subset": "B",
@@ -117,7 +117,7 @@
       "l1_reg": "0 (no feature selection)",
       "base_value": 0.4794864924624562,
       "max_additivity_residual": 1.1920928955078125e-07,
-      "seconds": 23.396537956999964
+      "seconds": 32.438566935999916
     },
     {
       "subset": "C",
@@ -129,7 +129,7 @@
       "l1_reg": "num_features(20)",
       "base_value": 0.5436690337955952,
       "max_additivity_residual": 5.960464477539063e-08,
-      "seconds": 10.838707920999923
+      "seconds": 13.67373303100021
     },
     {
       "subset": "D",
@@ -141,7 +141,7 @@
       "l1_reg": "num_features(20)",
       "base_value": 0.5096183754503727,
       "max_additivity_residual": 5.960464477539063e-08,
-      "seconds": 9.30899192700008
+      "seconds": 11.816335571000309
     }
   ],
   "explanations": [
@@ -159,7 +159,7 @@
     "Snapshot engagement is affected by exposure and reviewer following; no causal claims."
   ],
   "runtime": {
-    "python": "3.13.15",
+    "python": "3.13.16",
     "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
     "threads": {
       "OMP_NUM_THREADS": "2",

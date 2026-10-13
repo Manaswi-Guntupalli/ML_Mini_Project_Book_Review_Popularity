@@ -11,7 +11,7 @@
     "english_confidence": 0.9
   },
   "input_sha256": {
-    "goodreads_reviews_poetry.json.gz": "4bf8f720bccf3c96caddda9eeb4b6bc7b4f7ecd72ec7f9345d8c9c28eeddd781",
-    "goodreads_books_poetry.json.gz": "84a8c21273d28b7df29dc7f996b15f2b39e92e3c8808cd7288578c704f07c4a9"
+    "goodreads_reviews_poetry.json.gz": "f0f1c8d403cb67328c801bde6ae5c54cccd937b80979fefb042def044df82b78",
+    "goodreads_books_poetry.json.gz": "11a71d924f245323af8e0c16d9cc7b6beefb18cf155cb58434f8dc120febaaab"
   }
 }
