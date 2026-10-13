@@ -15,7 +15,7 @@ This is a Poetry-only, independently runnable adaptation inspired by Bridget Dal
 
 | Path | Contents |
 | --- | --- |
-| [`ML_mini_project_548_513.ipynb`](ML_mini_project_548_513.ipynb) | Executable Colab notebook with preprocessing, 18 experiments, evaluation, explanations and a text-only demo |
+| [`ML_MINI_PROJECT_FINAL_FINAL_CODE.ipynb`](ML_MINI_PROJECT_FINAL_FINAL_CODE.ipynb) | Executable Colab notebook with preprocessing, 18 experiments, evaluation, explanations and a text-only demo |
 | [`Book_Review_Popularity_548_513.pdf`](Book_Review_Popularity_548_513.pdf) | Presentation exported as a PDF |
 | [`results/`](results/) | Saved evaluation tables, figures, run metadata and selected model artifacts from one execution |
 | [`results/requirements.txt`](results/requirements.txt) | Tested core package versions; the notebook installs its own dependencies |
@@ -27,7 +27,7 @@ The two compressed Goodreads inputs are **not stored in this repository**. In pa
 ## Dataset and Colab run
 
 1. Download the two Poetry files from the dataset authors' [Goodreads dataset page](https://mengtingwan.github.io/data/goodreads.html): `goodreads_reviews_poetry.json.gz` and `goodreads_books_poetry.json.gz`. Keep both files compressed.
-2. Open [`ML_mini_project_548_513.ipynb`](ML_mini_project_548_513.ipynb) in Google Colab, preferably with a fresh CPU runtime, and choose **Runtime → Run all**.
+2. Open [`ML_MINI_PROJECT_FINAL_FINAL_CODE.ipynb`](ML_MINI_PROJECT_FINAL_FINAL_CODE.ipynb) in Google Colab, preferably with a fresh CPU runtime, and choose **Runtime → Run all**.
 3. Select **both** `.json.gz` files when the notebook's upload picker appears. Colab may append a suffix such as `(1)` to a duplicate filename; the notebook handles this.
 4. Stay connected while it runs. The notebook installs packages, downloads the official fastText `lid.176.bin` language model and NLTK resources, trains/evaluates the models, and downloads a results ZIP. To keep a copy of the execution, download the executed `.ipynb` from Colab.
 
@@ -35,8 +35,8 @@ The original dataset files used for the recorded run had these SHA-256 checksums
 
 | Input | SHA-256 |
 | --- | --- |
-| Reviews | `4bf8f720bccf3c96caddda9eeb4b6bc7b4f7ecd72ec7f9345d8c9c28eeddd781` |
-| Books | `84a8c21273d28b7df29dc7f996b15f2b39e92e3c8808cd7288578c704f07c4a9` |
+| Reviews | `f0f1c8d403cb67328c801bde6ae5c54cccd937b80979fefb042def044df82b78` |
+| Books | `11a71d924f245323af8e0c16d9cc7b6beefb18cf155cb58434f8dc120febaaab` |
 
 If Colab resets, rerun the notebook and upload the two datasets again. Package versions and seeds are recorded for reproducibility, but exact numeric results may vary across environments.
 
