@@ -3,7 +3,7 @@
 **Goodreads Poetry subset · Machine Learning Mini Project**
 
 **Team:** Guntupalli Manaswi (PES1UG24CS548) and Vainik (PES1UG24CS513)  
-**Course:** Semester 5, Section I · PES University
+**Course:** Semester 5, Section I 
 
 ## Project overview
 
