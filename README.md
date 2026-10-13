@@ -16,11 +16,10 @@ This is a Poetry-only, independently runnable adaptation inspired by Bridget Dal
 | Path | Contents |
 | --- | --- |
 | [`ML_MINI_PROJECT_FINAL_FINAL_CODE.ipynb`](ML_MINI_PROJECT_FINAL_FINAL_CODE.ipynb) | Executable Colab notebook with preprocessing, 18 experiments, evaluation, explanations and a text-only demo |
-| [`Book_Review_Popularity_548_513.pdf`](Book_Review_Popularity_548_513.pdf) | Presentation exported as a PDF |
+| [`Book_Review_Popularity_548_513_FINAL.pdf`](Book_Review_Popularity_548_513_FINAL.pdf) | Presentation exported as a PDF |
 | [`results/`](results/) | Saved evaluation tables, figures, run metadata and selected model artifacts from one execution |
 | [`results/requirements.txt`](results/requirements.txt) | Tested core package versions; the notebook installs its own dependencies |
-| [`Book_Review_Popularity_Writeup_548_513.pdf`](Book_Review_Popularity_Writeup_548_513.pdf) | Required two-page project write-up for submission |
-| [`Book_Review_Popularity_Writeup_548_513.docx`](Book_Review_Popularity_Writeup_548_513.docx) | Editable copy of the project write-up |
+| [`Book_Review_Popularity_Writeup_548_513_FINAL.pdf`](Book_Review_Popularity_Writeup_548_513_FINAL.pdf) | Required two-page project write-up for submission |
 
 The two compressed Goodreads inputs are **not stored in this repository**. In particular, downloading this repository alone does not provide the dataset or fastText language model needed for a fresh run.
 
